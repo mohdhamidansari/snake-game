@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("/Users/mohdhamidansari/Desktop/snake");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(150, 243, 150) , rgb(243, 243, 126));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.food{
+    background: linear-gradient(rgb(248, 167, 167) , rgb(243, 146, 243) );
+    border-radius: 17px;
+    transform: scale(1.05);
+    border: .25vmin solid black;
+
+}
+
+.snake{
+    background-color: rgb(251, 91, 91);
+    border: .25vmin solid white;
+    border-radius: 25px;
+}
+
+#scoreBox{
+    position: absolute;
+    top:40px;
+    right: 100px;
+    font-weight: bold;
+    font-style: italic;
+    font-size:30px;
+    font-family: 'New Tegomin', serif;
+}
+
+#highscoreBox{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    font-family: 'New Tegomin', serif;
+}
